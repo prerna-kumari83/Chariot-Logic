@@ -1,0 +1,67 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #3a86ff22;
+  padding: 30px 28px 22px 28px;
+  min-width: 320px;
+  max-width: 90vw;
+}
+.modal-content h2 {
+  margin-top: 0;
+  color: #3a86ff;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal-content label {
+  font-weight: 500;
+  color: #333;
+}
+.modal-content select,
+.modal-content textarea {
+  padding: 7px 10px;
+  border-radius: 7px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+}
+.modal-content textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+.modal-actions button {
+  background: #3a86ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cancel-btn {
+  background: #ff3a3a;
+}
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 16px 8vw 12px 8vw;
+    min-width: 0;
+  }
+}
